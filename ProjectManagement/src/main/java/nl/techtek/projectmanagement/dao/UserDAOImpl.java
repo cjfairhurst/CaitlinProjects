@@ -7,7 +7,6 @@ import javax.transaction.Transactional;
 import nl.techtek.projectmanagement.model.User;
 import org.springframework.stereotype.Repository;
 
-
 /**
  *
  * @author Caitlin
@@ -43,10 +42,18 @@ public class UserDAOImpl implements UserDAO {
     public User get(int id) {
         return getEntityManager().find(User.class, id);
     }
-    
+
     @Override
     public User getUser(String username, String password) {
-        return getEntityManager().createQuery("FROM User u WHERE u.username = :username AND u.password = :password", User.class).getSingleResult();
+        try {
+            return getEntityManager()
+                    .createQuery("FROM User u WHERE u.username = :username AND u.password = :password", User.class)
+                    .setParameter("username", username)
+                    .setParameter("password", password)
+                    .getSingleResult();
+        } catch (Exception ex) {
+            return null;
+        }
     }
 
     @Override

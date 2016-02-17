@@ -1,6 +1,7 @@
 nl\techtek\projectmanagement\config\SpingWebAppInitializer.class
-nl\techtek\projectmanagement\controller\HomeController.class
 nl\techtek\projectmanagement\model\User.class
+nl\techtek\projectmanagement\dao\UserDAO.class
+nl\techtek\projectmanagement\config\TechtekUtils.class
+nl\techtek\projectmanagement\controller\LoginController.class
 nl\techtek\projectmanagement\config\ApplicationContextConfig.class
 nl\techtek\projectmanagement\dao\UserDAOImpl.class
-nl\techtek\projectmanagement\dao\UserDAO.class
