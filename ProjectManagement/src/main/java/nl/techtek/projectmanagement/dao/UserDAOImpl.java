@@ -3,10 +3,10 @@ package nl.techtek.projectmanagement.dao;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
 import nl.techtek.projectmanagement.model.User;
-
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
+
 
 /**
  *
