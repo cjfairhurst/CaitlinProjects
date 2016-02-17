@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SaveData>
+    <DefaultLogDirectory>C:\Users\Caitlin\Documents\NetBeansProjects\Logger\src\main\resources\test</DefaultLogDirectory>
+    <DefaultSaveDirectory>C:\Users\Caitlin\Documents\NetBeansProjects\Logger\src\main\resources\test</DefaultSaveDirectory>
+    <FilterColor>0xb30000ff</FilterColor>
+    <ShoutColor>0xcc9900ff</ShoutColor>
+    <TalkColor>0x1a1a1aff</TalkColor>
+    <TellColor>0x008000ff</TellColor>
+    <WhisperColor>0x007fffff</WhisperColor>
+</SaveData>

@@ -1,0 +1,4 @@
+com\nwn\logger\LoggerController.class
+com\nwn\logger\LoggerOptionsController.class
+com\nwn\logger\MainApp.class
+com\nwn\logger\LoggerException.class

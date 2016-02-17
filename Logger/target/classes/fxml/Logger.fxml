@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="MainPane" fx:id="main" prefHeight="550.0" prefWidth="480.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nwn.logger.FXMLController">
+    <children>
+        <Button fx:id="logDirectoryChooser" layoutX="338.0" layoutY="59.0" onAction="#chooseLogDirectory" text="Log Directory" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="15.0" />
+        <Label fx:id="logDirectoryLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="51.0" minHeight="16" minWidth="69" prefHeight="45.0" prefWidth="300.0" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="150.0" />
+      <Button layoutX="338.0" layoutY="428.0" onAction="#cycleLogs" text="Cycle Logs" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="15.0" />
+      <Button fx:id="saveDirectoryChooser" layoutX="338.0" layoutY="126.0" onAction="#chooseSaveDirectory" text="Save Directory" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="15.0" />
+      <Label fx:id="saveDirectoryLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="119.0" minHeight="16" minWidth="69" prefHeight="45.0" prefWidth="300.0" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="150.0" />
+      <Button layoutX="340.0" layoutY="340.0" onAction="#addFilter" text="Add Filter" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="15.0" />
+      <Label fx:id="filterLabel" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="393.0" minHeight="16" minWidth="69" prefHeight="90.0" prefWidth="434.0" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="22.0" />
+      <TextField fx:id="titleField" layoutX="50.0" layoutY="197.0" prefHeight="27.0" prefWidth="280.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="150.0" />
+      <TextField fx:id="filterField" layoutX="50.0" layoutY="340.0" onAction="#addFilter" prefHeight="27.0" prefWidth="280.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="150.0" />
+      <Label alignment="CENTER" layoutX="340.0" layoutY="202.0" text="Title" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="15.0" />
+      <Label id="error" fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="420.0" minHeight="16" minWidth="69" prefHeight="45.0" prefWidth="300.0" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="15.0" />
+      <Button fx:id="optionsButton" layoutX="393.0" layoutY="14.0" mnemonicParsing="false" onAction="#openOptions" text="?" AnchorPane.rightAnchor="15.0" />
+      <Button fx:id="openLogDirectoryButton" layoutX="14.0" layoutY="59.0" mnemonicParsing="false" onAction="#openLogDirectory" text="+" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="435.0" />
+      <Button fx:id="openSaveDirectoryButton" layoutX="14.0" layoutY="126.0" mnemonicParsing="false" onAction="#openSaveDirectory" text="+" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="435.0" />
+      <Button fx:id="clearTitleButton" layoutX="10.0" layoutY="197.0" mnemonicParsing="false" onAction="#clearTitle" text="-" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="435.0" />
+      <Button fx:id="clearFiltersButton" layoutX="10.0" layoutY="340.0" mnemonicParsing="false" onAction="#clearFilters" text="-" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="435.0" />
+      <Button fx:id="clearSelfButton" layoutX="10.0" layoutY="267.0" mnemonicParsing="false" onAction="#clearSelfFilter" text="-" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="435.0" />
+      <TextField fx:id="selfField" layoutX="50.0" layoutY="267.0" onAction="#setSelfFilter" prefHeight="27.0" prefWidth="280.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="150.0" />
+      <Button layoutX="367.0" layoutY="267.0" onAction="#setSelfFilter" text="Self Filter" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="15.0" />
+      <Label id="confirmation" fx:id="confirmationLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="497.0" minHeight="16" minWidth="69" prefHeight="45.0" prefWidth="300.0" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="150.0" />
+    </children>
+</AnchorPane>

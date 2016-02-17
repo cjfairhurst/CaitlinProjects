@@ -1,0 +1,68 @@
+* {
+    -fx-dark: #1a1a1a;
+    -fx-white: #ffffff;
+    -fx-gray: #4d4d4d;
+    -fx-error: #ff0000;
+    -fx-blue: #e5f6ff;
+    -fx-green: #00ff44;
+    -fx-lightgray: #999999;
+}
+
+#MainPane {
+    -fx-background-color: -fx-dark;
+}
+
+.label {
+    -fx-text-fill: -fx-white;
+}
+
+#error {
+    -fx-text-fill: -fx-error;
+    -fx-font-weight: bold;
+}
+
+#confirmation {
+    -fx-text-fill: -fx-green;
+}
+
+#talkColor, #tellColor, #whisperColor, #shoutColor, #filterColor {
+    -fx-background-color: -fx-gray;
+    -fx-text-fill: -fx-white;
+}
+
+.button {
+    -fx-background-color: -fx-gray;
+    -fx-text-fill: -fx-white;
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 0px;
+}
+
+.button:hover {
+    -fx-background-color: -fx-blue;
+    -fx-text-fill: -fx-dark;
+}
+
+.choice-box {
+    -fx-background-color: -fx-gray;
+    -fx-mark-color: -fx-white;
+}
+
+.choice-box .context-menu {
+    -fx-background-color: -fx-gray;
+}
+
+.choice-box .menu-item:focused {
+    -fx-background-color: -fx-blue; 
+}
+
+.choice-box .menu-item:focused .label {
+    -fx-text-fill: -fx-gray;
+}
+
+.text-field {
+    -fx-text-fill: -fx-dark;
+    -fx-prompt-text-fill: -fx-lightgray;
+}
+.text-field:focused {
+    -fx-prompt-text-fill: transparent;
+}
