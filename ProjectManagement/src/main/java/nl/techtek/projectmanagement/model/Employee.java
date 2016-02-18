@@ -3,16 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package nl.techtek.projectmanagement.config;
+package nl.techtek.projectmanagement.model;
 
 /**
  *
  * @author Caitlin
  */
-public class TechtekUtils {
+public class Employee {
     
-    public static boolean checkNullOrEmpty(String value) {
-        return value == null || value.isEmpty();
-    }
+    private int id;
+    private int user_id;
+    private String position;
+    private double salaris;
     
 }

@@ -32,6 +32,8 @@ public class User implements Serializable {
     private String telephone;
     private String mobile;
     private String email;
+    private String recoveryKey;
+    private String isVerified;
 
     @Id
     @GeneratedValue
@@ -163,7 +165,21 @@ public class User implements Serializable {
     public void setEmail(String email) {
         this.email = email;
     }
-    
-    
-    
+
+    public String getRecoveryKey() {
+        return recoveryKey;
+    }
+
+    public void setRecoveryKey(String recoveryKey) {
+        this.recoveryKey = recoveryKey;
+    }
+
+    public String getIsVerified() {
+        return isVerified;
+    }
+
+    public void setIsVerified(String isVerified) {
+        this.isVerified = isVerified;
+    }
+
 }

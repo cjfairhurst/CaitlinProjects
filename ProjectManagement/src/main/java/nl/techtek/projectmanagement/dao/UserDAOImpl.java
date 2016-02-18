@@ -61,4 +61,16 @@ public class UserDAOImpl implements UserDAO {
         getEntityManager().remove(id);
     }
 
+    @Override
+    public User userExists(String username) {
+        try {
+            return getEntityManager()
+                    .createQuery("FROM User u WHERE u.username = :username", User.class)
+                    .setParameter("username", username)
+                    .getSingleResult();
+        } catch (Exception ex) {
+            return null;
+        }
+    }
+
 }
